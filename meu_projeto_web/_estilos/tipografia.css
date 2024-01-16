@@ -1,0 +1,219 @@
+/* 
+Tipografia
+font-family: 'Fredericka the Great', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+
+Cores
+branco:#ffff;
+verde escuro:#3B9212;
+verde claro:#8AF01D;
+laranja claro:#FFBF00;
+laranja escuro:#ffa500;
+cinza escuro:#404040;
+cinza claro:#F7F7F7;
+*/
+
+*{
+    font-size: 16px;
+
+}
+
+h1, h2, h3 {
+    font-family: 'Fredericka the Great', serif;
+    text-align: center;
+    text-transform: uppercase;
+    color:#ffa500;
+}
+
+h4, h5, h6 {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: #FFBF00;
+}
+
+h1{
+    font-size: 600%;
+    font-weight: 200;
+}
+
+h2{
+    font-size: 400%;
+    font-weight: 200;
+}
+
+h2:after{
+    display: block;
+    background-color: #8AF01D;
+    height: 5px;
+    width: 100px;
+    margin: 40px auto 30px;
+    content: " ";
+
+}
+
+h4{
+    font-size: 150%;
+    font-weight: 150;
+    padding: 20px 0;
+}
+
+p, li, a {
+    font-size: 'Open Sans', sans-serif;
+    color: #404040;
+}
+
+p.destaque{
+    font-size: 130%;
+    line-height: 1.8;
+    font-weight: 300;
+    text-align: center;
+    width: 60%;
+
+}
+
+/*---------------------------*/
+/*Elementos do Header*/
+/*---------------------------*/
+
+header div#chamada h1{
+    color: white;
+    text-shadow: 4px 6px 10px black;
+
+    animation-name: HeaderH1-moverParaDireita;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+
+}
+
+header div#chamada h4{
+    font-size: 250%;
+    text-shadow: 4px 6px 10px black;
+    margin-bottom: 55px;
+
+    animation-name: HeaderH4-moverParaEsquerda;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+
+
+}
+
+header div#chamada a{
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(rgba(138,240,29,94) 0%, rgba(59,146,18,57) 50%, rgba(59,146,18,57) 100% );
+    padding: 20px 80px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 110%;
+    display: inline-block;
+
+
+    animation-name: HeaderA-moverParaCima;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+/* ************** */
+/* Rotina Saudável */
+/* ************** */
+
+div.pontos-chaves h4{
+    color: #404040;
+}
+
+div.pontos-chaves h4:after{
+    display: block;
+    background-color:#8AF01D ;
+    height: 5px;
+    width: 30%;
+    margin: 20px auto 10px;
+    content: " ";
+}
+
+
+/* ************** */
+/* Produto Perfeito */
+/* ************** */
+
+section#produto p.destaque{
+    color: white;
+    width: 40%;
+    opacity: 0;
+
+}
+
+section#produto ul li{
+     color: white;
+     list-style: none;
+     line-height: 1.9;
+     font-size: 90%;
+     text-transform: uppercase;
+}
+
+/* ************** */
+/* Nossos Clientes */
+/* ************** */
+
+section#depoimentos p.destaque{
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* **************************** */
+/* Transição Depoimentos-Planos */
+/* *************************** */
+
+
+/* ******* */
+/* Planos */
+/* ****** */
+
+section#plano-principal h4{
+    color: #ffa500;
+}
+
+section#plano-principal ul{
+    margin-top: 25px;
+}
+
+section#plano-principal ul li{
+    font-size: 85%;
+    text-align: left;
+    margin-left: 30px;
+    line-height: 2;
+    text-decoration: none;
+} 
+
+section#plano-principal div.planos-top p{
+    font-weight: 800;
+    text-align: center;
+}
+
+section#plano-principal div.planos-bottom p{
+   color: #fff;
+   font-weight: 800;
+   text-transform: uppercase;
+   text-align: center;
+   padding: 35px;
+}
+
+/* ******* */
+/* Footer */
+/* ****** */
+
+footer div#informacao ul {
+    margin-left: 15px;
+    margin-bottom: 100px;
+}
+
+footer div#informacao li {
+    list-style: none;
+    color: #fff;
+    margin-bottom: 5px;
+}
